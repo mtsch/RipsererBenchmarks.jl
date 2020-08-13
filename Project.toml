@@ -1,0 +1,8 @@
+name = "RipsererBenchmarks"
+uuid = "80dcf07d-1274-482a-815b-a66291c67137"
+authors = ["mtsch <matijacufar@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+BenchmarkTools = "6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf"
+SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
