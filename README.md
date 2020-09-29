@@ -4,14 +4,21 @@ This repository contains the datasets and benchmarking code for
 [Ripserer.jl](https://github.com/mtsch/Ripserer.jl). Only benchmarks that we were able to
 run on a laptop with 8GB RAM are included.
 
-The benchmarks cosist of two parts, a timing benchmark based on
+It contains code for comparing Ripserer.jl with [Ripser](https://github.com/Ripser/ripser),
+[Cubical Ripser](https://github.com/CubicalRipser/), and
+[Eirene.jl](https://github.com/Eetion/Eirene.jl), as well as benchmarks comparing Ripserer's
+cohomology, homology, and involuted homology algorithms.
+
+The benchmarks consist of two parts, a timing benchmark based on
 [BenchmarkTools.jl](https://github.com/JuliaCI/BenchmarkTools.jl/) and memory profiling
 using [Valgrind's Massif heap
 profiler](https://www.valgrind.org/docs/manual/ms-manual.html).
 
 The datasets can be found in the [`datasets`](datasets) directory. Results are located in
-[`results`](results). To load the `.json` files into Julia, use
-`BenchmarkTools.load`. Massif results can be viewed with
+[`results`](results). To load the `.json` file into Julia, use `BenchmarkTools.load`. Also
+see [the BenchmarkTools.jl
+manual](https://github.com/JuliaCI/BenchmarkTools.jl/blob/master/doc/manual.md) for more
+info. Massif results can be viewed with
 [`massif-visualizer`](https://github.com/KDE/massif-visualizer).
 
 The code is sparsely documented. If you are interested in running the benchmarks yourself,
@@ -44,6 +51,9 @@ preprint arXiv:1908.02518.
 
 Kaji, S., Sudo, T., & Ahara, K. (2020). Cubical Ripser: Software for computing persistent
 homology of image and volume data. arXiv preprint arXiv:2005.12692.
+
+Henselman, G., & Ghrist, R. (2016). Matroid filtrations and computational persistent
+homology. arXiv preprint arXiv:1606.00199.
 
 Otter, N., Porter, M. A., Tillmann, U., Grindrod, P., & Harrington, H. A. (2017). A roadmap
 for the computation of persistent homology. EPJ Data Science, 6(1), 17.
