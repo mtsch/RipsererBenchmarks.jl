@@ -1,7 +1,7 @@
-struct Benchmark{F, D, T, K1, K2}
+struct Benchmark{D, T, K1, K2}
     filename::String
     name::String
-    complex::F
+    complex::UnionAll
     data::D
     threshold::T
     kwargs::K1
@@ -14,11 +14,13 @@ function Benchmark(filename; threshold=nothing, extra::K=(;), kwargs...) where K
     data = load_data(filename)
     complex = if ext == ".dipha"
         Cubical
+    elseif ext == ".alpha"
+        Alpha
     else
         Rips
     end
     T = typeof(threshold)
-    return Benchmark{typeof(complex), typeof(data), T, typeof(kwargs), K}(
+    return Benchmark{typeof(data), T, typeof(kwargs), K}(
         filename, name, complex, data, threshold, kwargs, extra
     )
 end

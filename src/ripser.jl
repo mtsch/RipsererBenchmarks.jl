@@ -44,9 +44,9 @@ function ripsers_cmd(filename, string=false; dim_max=1, modulus=2, threshold=not
     ext = splitext(filename)[2]
     exedir = joinpath(@__DIR__, "../exes")
     if ext == ".dipha"
-        if dim_max == 2
+        if dim_max == 1
             cmd_strings = ["$exedir/CR2", filename]
-        elseif dim_max == 3
+        elseif dim_max == 2
             cmd_strings = ["$exedir/CR3", filename]
         else
             error("invalid dim_max for cubical ripser")
@@ -78,6 +78,6 @@ end
 
 function ripser_benchmark(b::Benchmark)
     return @benchmarkable read(
-        $(ripsers_cmd(b.filename; b.kwargs...))
+        $(ripsers_cmd(b.filename; b.kwargs..., b.threshold))
     ) gcsample=true samples=5 seconds=1000
 end

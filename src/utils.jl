@@ -73,7 +73,7 @@ end
 
 function load_data(filename)
     ext = splitext(filename)[2]
-    if ext == ".pts"
+    if ext == ".pts" || ext == ".alpha"
         return load_points(filename)
     elseif ext == ".dist"
         return load_dist(filename)
