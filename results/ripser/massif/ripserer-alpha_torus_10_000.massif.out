@@ -1,0 +1,1212 @@
+desc: --massif-out-file=/home/m/homology/jl/RipsererBenchmarks/src/../results/ripser/massif/ripserer-alpha_torus_10_000.massif.out
+cmd: julia -O3 -e include("/home/m/homology/jl/RipsererBenchmarks/src/utils.jl"); run_ripserer("/home/m/homology/jl/RipsererBenchmarks/src/../datasets/alpha_torus_10_000.spdist"; (sparse = false, threshold = nothing, dim_max = 2)...)
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=29083647
+mem_heap_B=72704
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=29103590
+mem_heap_B=72760
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=29126143
+mem_heap_B=74056
+mem_heap_extra_B=224
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=29152584
+mem_heap_B=76129
+mem_heap_extra_B=599
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=29187940
+mem_heap_B=76824
+mem_heap_extra_B=696
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=29206011
+mem_heap_B=77430
+mem_heap_extra_B=986
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=29231651
+mem_heap_B=80641
+mem_heap_extra_B=1551
+mem_stacks_B=0
+heap_tree=detailed
+n5: 80641 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x8A8545A: pool (eh_alloc.cc:123)
+  n1: 72704 0x8A8545A: __static_initialization_and_destruction_0 (eh_alloc.cc:262)
+   n1: 72704 0x8A8545A: _GLOBAL__sub_I_eh_alloc.cc (eh_alloc.cc:338)
+    n1: 72704 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+     n1: 72704 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+      n1: 72704 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+       n1: 72704 0x3: ???
+        n1: 72704 0x1FFF0007A6: ???
+         n1: 72704 0x1FFF0007AC: ???
+          n1: 72704 0x1FFF0007B0: ???
+           n0: 72704 0x1FFF0007B3: ???
+ n1: 2993 0x59AE0D3: std::pair<llvm::StringMapIterator<llvm::cl::Option*>, bool> llvm::StringMap<llvm::cl::Option*, llvm::MallocAllocator>::try_emplace<llvm::cl::Option*>(llvm::StringRef, llvm::cl::Option*&&) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+  n2: 2993 0x59AE4D1: (anonymous namespace)::CommandLineParser::addOption(llvm::cl::Option*, llvm::cl::SubCommand*) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+   n1: 2649 0x59AE814: llvm::cl::Option::addArgument() (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+    n0: 2649 in 72 places, all below massif's threshold (1.00%)
+   n0: 344 in 2 places, all below massif's threshold (1.00%)
+ n1: 2080 0x4EBF141: __new_exitfn (in /usr/lib/libc-2.32.so)
+  n2: 2080 0x4EBF1E5: __internal_atexit (in /usr/lib/libc-2.32.so)
+   n1: 1040 0x58E9738: _GLOBAL__sub_I_Signals.cpp (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+    n1: 1040 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+     n1: 1040 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+      n1: 1040 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+       n1: 1040 0x3: ???
+        n1: 1040 0x1FFF0007A6: ???
+         n1: 1040 0x1FFF0007AC: ???
+          n1: 1040 0x1FFF0007B0: ???
+           n0: 1040 0x1FFF0007B3: ???
+   n1: 1040 0x58EBC21: __static_initialization_and_destruction_0(int, int) [clone .constprop.1235] (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+    n1: 1040 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+     n1: 1040 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+      n1: 1040 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+       n1: 1040 0x3: ???
+        n1: 1040 0x1FFF0007A6: ???
+         n1: 1040 0x1FFF0007AC: ???
+          n1: 1040 0x1FFF0007B0: ???
+           n0: 1040 0x1FFF0007B3: ???
+ n1: 1548 0x5A229A5: llvm::StringMapImpl::RehashTable(unsigned int) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+  n1: 1548 0x59AE130: std::pair<llvm::StringMapIterator<llvm::cl::Option*>, bool> llvm::StringMap<llvm::cl::Option*, llvm::MallocAllocator>::try_emplace<llvm::cl::Option*>(llvm::StringRef, llvm::cl::Option*&&) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+   n1: 1548 0x59AE4D1: (anonymous namespace)::CommandLineParser::addOption(llvm::cl::Option*, llvm::cl::SubCommand*) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+    n2: 1548 0x59AE814: llvm::cl::Option::addArgument() (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+     n1: 1548 0x58EBDB4: __static_initialization_and_destruction_0(int, int) [clone .constprop.1235] (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+      n1: 1548 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+       n1: 1548 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+        n1: 1548 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+         n1: 1548 0x3: ???
+          n1: 1548 0x1FFF0007A6: ???
+           n1: 1548 0x1FFF0007AC: ???
+            n1: 1548 0x1FFF0007B0: ???
+             n0: 1548 0x1FFF0007B3: ???
+     n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n0: 1316 in 11 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=8
+#-----------
+time=29264897
+mem_heap_B=85680
+mem_heap_extra_B=2104
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=29292582
+mem_heap_B=86409
+mem_heap_extra_B=2359
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=29314321
+mem_heap_B=92848
+mem_heap_extra_B=2744
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=29341463
+mem_heap_B=95086
+mem_heap_extra_B=3258
+mem_stacks_B=0
+heap_tree=detailed
+n6: 95086 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x8A8545A: pool (eh_alloc.cc:123)
+  n1: 72704 0x8A8545A: __static_initialization_and_destruction_0 (eh_alloc.cc:262)
+   n1: 72704 0x8A8545A: _GLOBAL__sub_I_eh_alloc.cc (eh_alloc.cc:338)
+    n1: 72704 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+     n1: 72704 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+      n1: 72704 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+       n1: 72704 0x3: ???
+        n1: 72704 0x1FFF0007A6: ???
+         n1: 72704 0x1FFF0007AC: ???
+          n1: 72704 0x1FFF0007B0: ???
+           n0: 72704 0x1FFF0007B3: ???
+ n1: 6986 0x59AE0D3: std::pair<llvm::StringMapIterator<llvm::cl::Option*>, bool> llvm::StringMap<llvm::cl::Option*, llvm::MallocAllocator>::try_emplace<llvm::cl::Option*>(llvm::StringRef, llvm::cl::Option*&&) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+  n2: 6986 0x59AE4D1: (anonymous namespace)::CommandLineParser::addOption(llvm::cl::Option*, llvm::cl::SubCommand*) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+   n1: 6642 0x59AE814: llvm::cl::Option::addArgument() (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+    n0: 6642 in 174 places, all below massif's threshold (1.00%)
+   n0: 344 in 2 places, all below massif's threshold (1.00%)
+ n1: 6240 0x4EBF141: __new_exitfn (in /usr/lib/libc-2.32.so)
+  n6: 6240 0x4EBF1E5: __internal_atexit (in /usr/lib/libc-2.32.so)
+   n1: 1040 0x58E9738: _GLOBAL__sub_I_Signals.cpp (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+    n1: 1040 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+     n1: 1040 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+      n1: 1040 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+       n1: 1040 0x3: ???
+        n1: 1040 0x1FFF0007A6: ???
+         n1: 1040 0x1FFF0007AC: ???
+          n1: 1040 0x1FFF0007B0: ???
+           n0: 1040 0x1FFF0007B3: ???
+   n1: 1040 0x58EBC21: __static_initialization_and_destruction_0(int, int) [clone .constprop.1235] (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+    n1: 1040 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+     n1: 1040 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+      n1: 1040 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+       n1: 1040 0x3: ???
+        n1: 1040 0x1FFF0007A6: ???
+         n1: 1040 0x1FFF0007AC: ???
+          n1: 1040 0x1FFF0007B0: ???
+           n0: 1040 0x1FFF0007B3: ???
+   n1: 1040 0x58EDB57: _GLOBAL__sub_I_HardwareLoops.cpp (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+    n1: 1040 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+     n1: 1040 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+      n1: 1040 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+       n1: 1040 0x3: ???
+        n1: 1040 0x1FFF0007A6: ???
+         n1: 1040 0x1FFF0007AC: ???
+          n1: 1040 0x1FFF0007B0: ???
+           n0: 1040 0x1FFF0007B3: ???
+   n1: 1040 0x58F055D: __static_initialization_and_destruction_0(int, int) [clone .constprop.360] (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+    n1: 1040 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+     n1: 1040 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+      n1: 1040 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+       n1: 1040 0x3: ???
+        n1: 1040 0x1FFF0007A6: ???
+         n1: 1040 0x1FFF0007AC: ???
+          n1: 1040 0x1FFF0007B0: ???
+           n0: 1040 0x1FFF0007B3: ???
+   n1: 1040 0x58F346C: __static_initialization_and_destruction_0(int, int) [clone .constprop.864] (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+    n1: 1040 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+     n1: 1040 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+      n1: 1040 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+       n1: 1040 0x3: ???
+        n1: 1040 0x1FFF0007A6: ???
+         n1: 1040 0x1FFF0007AC: ???
+          n1: 1040 0x1FFF0007B0: ???
+           n0: 1040 0x1FFF0007B3: ???
+   n1: 1040 0x58F532F: _GLOBAL__sub_I_PHIElimination.cpp (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+    n1: 1040 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+     n1: 1040 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+      n1: 1040 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+       n1: 1040 0x3: ???
+        n1: 1040 0x1FFF0007A6: ???
+         n1: 1040 0x1FFF0007AC: ???
+          n1: 1040 0x1FFF0007B0: ???
+           n0: 1040 0x1FFF0007B3: ???
+ n1: 4608 0x58F1C45: _GLOBAL__sub_I_MachineCopyPropagation.cpp (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+  n1: 4608 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+   n1: 4608 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+    n1: 4608 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+     n1: 4608 0x3: ???
+      n1: 4608 0x1FFF0007A6: ???
+       n1: 4608 0x1FFF0007AC: ???
+        n1: 4608 0x1FFF0007B0: ???
+         n0: 4608 0x1FFF0007B3: ???
+ n1: 3084 0x5A229A5: llvm::StringMapImpl::RehashTable(unsigned int) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+  n1: 3084 0x59AE130: std::pair<llvm::StringMapIterator<llvm::cl::Option*>, bool> llvm::StringMap<llvm::cl::Option*, llvm::MallocAllocator>::try_emplace<llvm::cl::Option*>(llvm::StringRef, llvm::cl::Option*&&) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+   n1: 3084 0x59AE4D1: (anonymous namespace)::CommandLineParser::addOption(llvm::cl::Option*, llvm::cl::SubCommand*) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+    n2: 3084 0x59AE814: llvm::cl::Option::addArgument() (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+     n1: 3084 0x58EF256: _GLOBAL__sub_I_ImplicitNullChecks.cpp (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+      n1: 3084 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+       n1: 3084 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+        n1: 3084 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+         n1: 3084 0x3: ???
+          n1: 3084 0x1FFF0007A6: ???
+           n1: 3084 0x1FFF0007AC: ???
+            n1: 3084 0x1FFF0007B0: ???
+             n0: 3084 0x1FFF0007B3: ???
+     n0: 0 in 3 places, all below massif's threshold (1.00%)
+ n0: 1464 in 15 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=12
+#-----------
+time=29360416
+mem_heap_B=99987
+mem_heap_extra_B=3573
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=29391458
+mem_heap_B=102841
+mem_heap_extra_B=4399
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=29424995
+mem_heap_B=106547
+mem_heap_extra_B=5133
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=29448444
+mem_heap_B=107346
+mem_heap_extra_B=5446
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=29462408
+mem_heap_B=109072
+mem_heap_extra_B=5696
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=29492149
+mem_heap_B=111519
+mem_heap_extra_B=6241
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=29509948
+mem_heap_B=113368
+mem_heap_extra_B=6560
+mem_stacks_B=0
+heap_tree=detailed
+n6: 113368 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x8A8545A: pool (eh_alloc.cc:123)
+  n1: 72704 0x8A8545A: __static_initialization_and_destruction_0 (eh_alloc.cc:262)
+   n1: 72704 0x8A8545A: _GLOBAL__sub_I_eh_alloc.cc (eh_alloc.cc:338)
+    n1: 72704 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+     n1: 72704 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+      n1: 72704 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+       n1: 72704 0x3: ???
+        n1: 72704 0x1FFF0007A6: ???
+         n1: 72704 0x1FFF0007AC: ???
+          n1: 72704 0x1FFF0007B0: ???
+           n0: 72704 0x1FFF0007B3: ???
+ n2: 14652 0x59AE0D3: std::pair<llvm::StringMapIterator<llvm::cl::Option*>, bool> llvm::StringMap<llvm::cl::Option*, llvm::MallocAllocator>::try_emplace<llvm::cl::Option*>(llvm::StringRef, llvm::cl::Option*&&) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+  n2: 14580 0x59AE4D1: (anonymous namespace)::CommandLineParser::addOption(llvm::cl::Option*, llvm::cl::SubCommand*) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+   n1: 14236 0x59AE814: llvm::cl::Option::addArgument() (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+    n0: 14236 in 370 places, all below massif's threshold (1.00%)
+   n0: 344 in 2 places, all below massif's threshold (1.00%)
+  n0: 72 in 1 place, below massif's threshold (1.00%)
+ n1: 13520 0x4EBF141: __new_exitfn (in /usr/lib/libc-2.32.so)
+  n2: 13520 0x4EBF1E5: __internal_atexit (in /usr/lib/libc-2.32.so)
+   n0: 10400 in 10 places, all below massif's threshold (1.00%)
+   n1: 3120 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+    n1: 3120 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+     n1: 3120 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+      n1: 3120 0x3: ???
+       n1: 3120 0x1FFF0007A6: ???
+        n1: 3120 0x1FFF0007AC: ???
+         n1: 3120 0x1FFF0007B0: ???
+          n0: 3120 0x1FFF0007B3: ???
+ n1: 6156 0x5A229A5: llvm::StringMapImpl::RehashTable(unsigned int) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+  n1: 6156 0x59AE130: std::pair<llvm::StringMapIterator<llvm::cl::Option*>, bool> llvm::StringMap<llvm::cl::Option*, llvm::MallocAllocator>::try_emplace<llvm::cl::Option*>(llvm::StringRef, llvm::cl::Option*&&) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+   n1: 6156 0x59AE4D1: (anonymous namespace)::CommandLineParser::addOption(llvm::cl::Option*, llvm::cl::SubCommand*) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+    n2: 6156 0x59AE814: llvm::cl::Option::addArgument() (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+     n1: 6156 0x58F6EF6: _GLOBAL__sub_I_RegisterCoalescer.cpp (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+      n1: 6156 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+       n1: 6156 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+        n1: 6156 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+         n1: 6156 0x3: ???
+          n1: 6156 0x1FFF0007A6: ???
+           n1: 6156 0x1FFF0007AC: ???
+            n1: 6156 0x1FFF0007B0: ???
+             n0: 6156 0x1FFF0007B3: ???
+     n0: 0 in 4 places, all below massif's threshold (1.00%)
+ n1: 4608 0x58F1C45: _GLOBAL__sub_I_MachineCopyPropagation.cpp (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+  n1: 4608 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+   n1: 4608 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+    n1: 4608 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+     n1: 4608 0x3: ???
+      n1: 4608 0x1FFF0007A6: ???
+       n1: 4608 0x1FFF0007AC: ???
+        n1: 4608 0x1FFF0007B0: ???
+         n0: 4608 0x1FFF0007B3: ???
+ n0: 1728 in 19 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=19
+#-----------
+time=29528859
+mem_heap_B=119969
+mem_heap_extra_B=6751
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=29558819
+mem_heap_B=122468
+mem_heap_extra_B=7348
+mem_stacks_B=0
+heap_tree=detailed
+n6: 122468 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x8A8545A: pool (eh_alloc.cc:123)
+  n1: 72704 0x8A8545A: __static_initialization_and_destruction_0 (eh_alloc.cc:262)
+   n1: 72704 0x8A8545A: _GLOBAL__sub_I_eh_alloc.cc (eh_alloc.cc:338)
+    n1: 72704 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+     n1: 72704 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+      n1: 72704 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+       n1: 72704 0x3: ???
+        n1: 72704 0x1FFF0007A6: ???
+         n1: 72704 0x1FFF0007AC: ???
+          n1: 72704 0x1FFF0007B0: ???
+           n0: 72704 0x1FFF0007B3: ???
+ n2: 16568 0x59AE0D3: std::pair<llvm::StringMapIterator<llvm::cl::Option*>, bool> llvm::StringMap<llvm::cl::Option*, llvm::MallocAllocator>::try_emplace<llvm::cl::Option*>(llvm::StringRef, llvm::cl::Option*&&) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+  n2: 16496 0x59AE4D1: (anonymous namespace)::CommandLineParser::addOption(llvm::cl::Option*, llvm::cl::SubCommand*) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+   n1: 16152 0x59AE814: llvm::cl::Option::addArgument() (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+    n0: 16152 in 423 places, all below massif's threshold (1.00%)
+   n0: 344 in 2 places, all below massif's threshold (1.00%)
+  n0: 72 in 1 place, below massif's threshold (1.00%)
+ n1: 14560 0x4EBF141: __new_exitfn (in /usr/lib/libc-2.32.so)
+  n2: 14560 0x4EBF1E5: __internal_atexit (in /usr/lib/libc-2.32.so)
+   n0: 11440 in 11 places, all below massif's threshold (1.00%)
+   n1: 3120 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+    n1: 3120 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+     n1: 3120 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+      n1: 3120 0x3: ???
+       n1: 3120 0x1FFF0007A6: ???
+        n1: 3120 0x1FFF0007AC: ???
+         n1: 3120 0x1FFF0007B0: ???
+          n0: 3120 0x1FFF0007B3: ???
+ n1: 12300 0x5A229A5: llvm::StringMapImpl::RehashTable(unsigned int) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+  n1: 12300 0x59AE130: std::pair<llvm::StringMapIterator<llvm::cl::Option*>, bool> llvm::StringMap<llvm::cl::Option*, llvm::MallocAllocator>::try_emplace<llvm::cl::Option*>(llvm::StringRef, llvm::cl::Option*&&) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+   n1: 12300 0x59AE4D1: (anonymous namespace)::CommandLineParser::addOption(llvm::cl::Option*, llvm::cl::SubCommand*) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+    n2: 12300 0x59AE814: llvm::cl::Option::addArgument() (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+     n1: 12300 0x590521B: __static_initialization_and_destruction_0(int, int) [clone .constprop.801] (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+      n1: 12300 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+       n1: 12300 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+        n1: 12300 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+         n1: 12300 0x3: ???
+          n1: 12300 0x1FFF0007A6: ???
+           n1: 12300 0x1FFF0007AC: ???
+            n1: 12300 0x1FFF0007B0: ???
+             n0: 12300 0x1FFF0007B3: ???
+     n0: 0 in 5 places, all below massif's threshold (1.00%)
+ n1: 4608 0x58F1C45: _GLOBAL__sub_I_MachineCopyPropagation.cpp (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+  n1: 4608 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+   n1: 4608 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+    n1: 4608 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+     n1: 4608 0x3: ???
+      n1: 4608 0x1FFF0007A6: ???
+       n1: 4608 0x1FFF0007AC: ???
+        n1: 4608 0x1FFF0007B0: ???
+         n0: 4608 0x1FFF0007B3: ???
+ n0: 1728 in 19 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=21
+#-----------
+time=29584166
+mem_heap_B=124784
+mem_heap_extra_B=7872
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=29601537
+mem_heap_B=126704
+mem_heap_extra_B=8128
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=29628109
+mem_heap_B=129592
+mem_heap_extra_B=8768
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=29651833
+mem_heap_B=131984
+mem_heap_extra_B=9288
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=29684898
+mem_heap_B=135133
+mem_heap_extra_B=10059
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=29719205
+mem_heap_B=139813
+mem_heap_extra_B=10987
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=29737347
+mem_heap_B=140923
+mem_heap_extra_B=11429
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=29756264
+mem_heap_B=143082
+mem_heap_extra_B=11838
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=29783801
+mem_heap_B=146741
+mem_heap_extra_B=12459
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=29811564
+mem_heap_B=147997
+mem_heap_extra_B=12891
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=29837488
+mem_heap_B=173904
+mem_heap_extra_B=13064
+mem_stacks_B=0
+heap_tree=detailed
+n6: 173904 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x8A8545A: pool (eh_alloc.cc:123)
+  n1: 72704 0x8A8545A: __static_initialization_and_destruction_0 (eh_alloc.cc:262)
+   n1: 72704 0x8A8545A: _GLOBAL__sub_I_eh_alloc.cc (eh_alloc.cc:338)
+    n1: 72704 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+     n1: 72704 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+      n1: 72704 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+       n1: 72704 0x3: ???
+        n1: 72704 0x1FFF0007A6: ???
+         n1: 72704 0x1FFF0007AC: ???
+          n1: 72704 0x1FFF0007B0: ???
+           n0: 72704 0x1FFF0007B3: ???
+ n1: 36888 0x5A229A5: llvm::StringMapImpl::RehashTable(unsigned int) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+  n1: 36888 0x59AE130: std::pair<llvm::StringMapIterator<llvm::cl::Option*>, bool> llvm::StringMap<llvm::cl::Option*, llvm::MallocAllocator>::try_emplace<llvm::cl::Option*>(llvm::StringRef, llvm::cl::Option*&&) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+   n1: 36888 0x59AE4D1: (anonymous namespace)::CommandLineParser::addOption(llvm::cl::Option*, llvm::cl::SubCommand*) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+    n3: 36888 0x59AE814: llvm::cl::Option::addArgument() (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+     n1: 24588 0x5924409: _GLOBAL__sub_I_ObjCARCOpts.cpp (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+      n1: 24588 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+       n1: 24588 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+        n1: 24588 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+         n1: 24588 0x3: ???
+          n1: 24588 0x1FFF0007A6: ???
+           n1: 24588 0x1FFF0007AC: ???
+            n1: 24588 0x1FFF0007B0: ???
+             n0: 24588 0x1FFF0007B3: ???
+     n1: 12300 0x590521B: __static_initialization_and_destruction_0(int, int) [clone .constprop.801] (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+      n1: 12300 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+       n1: 12300 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+        n1: 12300 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+         n1: 12300 0x3: ???
+          n1: 12300 0x1FFF0007A6: ???
+           n1: 12300 0x1FFF0007AC: ???
+            n1: 12300 0x1FFF0007B0: ???
+             n0: 12300 0x1FFF0007B3: ???
+     n0: 0 in 5 places, all below massif's threshold (1.00%)
+ n2: 30393 0x59AE0D3: std::pair<llvm::StringMapIterator<llvm::cl::Option*>, bool> llvm::StringMap<llvm::cl::Option*, llvm::MallocAllocator>::try_emplace<llvm::cl::Option*>(llvm::StringRef, llvm::cl::Option*&&) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+  n2: 30321 0x59AE4D1: (anonymous namespace)::CommandLineParser::addOption(llvm::cl::Option*, llvm::cl::SubCommand*) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+   n1: 29977 0x59AE814: llvm::cl::Option::addArgument() (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+    n0: 29977 in 757 places, all below massif's threshold (1.00%)
+   n0: 344 in 2 places, all below massif's threshold (1.00%)
+  n0: 72 in 1 place, below massif's threshold (1.00%)
+ n1: 26000 0x4EBF141: __new_exitfn (in /usr/lib/libc-2.32.so)
+  n2: 26000 0x4EBF1E5: __internal_atexit (in /usr/lib/libc-2.32.so)
+   n0: 20800 in 20 places, all below massif's threshold (1.00%)
+   n1: 5200 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+    n1: 5200 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+     n1: 5200 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+      n1: 5200 0x3: ???
+       n1: 5200 0x1FFF0007A6: ???
+        n1: 5200 0x1FFF0007AC: ???
+         n1: 5200 0x1FFF0007B0: ???
+          n0: 5200 0x1FFF0007B3: ???
+ n1: 4608 0x58F1C45: _GLOBAL__sub_I_MachineCopyPropagation.cpp (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+  n1: 4608 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+   n1: 4608 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+    n1: 4608 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+     n1: 4608 0x3: ???
+      n1: 4608 0x1FFF0007A6: ???
+       n1: 4608 0x1FFF0007AC: ???
+        n1: 4608 0x1FFF0007B0: ???
+         n0: 4608 0x1FFF0007B3: ???
+ n0: 3311 in 38 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=32
+#-----------
+time=29868160
+mem_heap_B=164162
+mem_heap_extra_B=13686
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=29886897
+mem_heap_B=166093
+mem_heap_extra_B=14035
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=29920660
+mem_heap_B=168522
+mem_heap_extra_B=14526
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=29950834
+mem_heap_B=201619
+mem_heap_extra_B=14653
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=29958543
+mem_heap_B=206704
+mem_heap_extra_B=14664
+mem_stacks_B=0
+heap_tree=detailed
+n8: 206704 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x8A8545A: pool (eh_alloc.cc:123)
+  n1: 72704 0x8A8545A: __static_initialization_and_destruction_0 (eh_alloc.cc:262)
+   n1: 72704 0x8A8545A: _GLOBAL__sub_I_eh_alloc.cc (eh_alloc.cc:338)
+    n1: 72704 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+     n1: 72704 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+      n1: 72704 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+       n1: 72704 0x3: ???
+        n1: 72704 0x1FFF0007A6: ???
+         n1: 72704 0x1FFF0007AC: ???
+          n1: 72704 0x1FFF0007B0: ???
+           n0: 72704 0x1FFF0007B3: ???
+ n2: 34519 0x59AE0D3: std::pair<llvm::StringMapIterator<llvm::cl::Option*>, bool> llvm::StringMap<llvm::cl::Option*, llvm::MallocAllocator>::try_emplace<llvm::cl::Option*>(llvm::StringRef, llvm::cl::Option*&&) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+  n2: 34447 0x59AE4D1: (anonymous namespace)::CommandLineParser::addOption(llvm::cl::Option*, llvm::cl::SubCommand*) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+   n1: 34103 0x59AE814: llvm::cl::Option::addArgument() (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+    n0: 34103 in 861 places, all below massif's threshold (1.00%)
+   n0: 344 in 2 places, all below massif's threshold (1.00%)
+  n0: 72 in 1 place, below massif's threshold (1.00%)
+ n2: 32769 0x5A15857: llvm::SmallVectorBase::grow_pod(void*, unsigned long, unsigned long) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+  n1: 32769 0x5A08A4F: getMemoryBufferForStream(int, llvm::Twine const&) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+   n1: 32769 0x5A09227: llvm::MemoryBuffer::getFileAsStream(llvm::Twine const&) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+    n1: 32769 0x5A715BE: computeHostNumPhysicalCores() (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+     n1: 32769 0x5A71ED4: llvm::sys::getHostNumPhysicalCores() (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+      n1: 32769 0x5A87548: llvm::heavyweight_hardware_concurrency() (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+       n1: 32769 0x592EFC1: _GLOBAL__sub_I_ThinLTOCodeGenerator.cpp (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+        n1: 32769 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+         n1: 32769 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+          n1: 32769 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+           n1: 32769 0x3: ???
+            n1: 32769 0x1FFF0007A6: ???
+             n1: 32769 0x1FFF0007AC: ???
+              n1: 32769 0x1FFF0007B0: ???
+               n0: 32769 0x1FFF0007B3: ???
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 29120 0x4EBF141: __new_exitfn (in /usr/lib/libc-2.32.so)
+  n2: 29120 0x4EBF1E5: __internal_atexit (in /usr/lib/libc-2.32.so)
+   n0: 22880 in 22 places, all below massif's threshold (1.00%)
+   n1: 6240 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+    n1: 6240 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+     n1: 6240 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+      n1: 6240 0x3: ???
+       n1: 6240 0x1FFF0007A6: ???
+        n1: 6240 0x1FFF0007AC: ???
+         n1: 6240 0x1FFF0007B0: ???
+          n0: 6240 0x1FFF0007B3: ???
+ n1: 24588 0x5A229A5: llvm::StringMapImpl::RehashTable(unsigned int) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+  n1: 24588 0x59AE130: std::pair<llvm::StringMapIterator<llvm::cl::Option*>, bool> llvm::StringMap<llvm::cl::Option*, llvm::MallocAllocator>::try_emplace<llvm::cl::Option*>(llvm::StringRef, llvm::cl::Option*&&) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+   n1: 24588 0x59AE4D1: (anonymous namespace)::CommandLineParser::addOption(llvm::cl::Option*, llvm::cl::SubCommand*) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+    n2: 24588 0x59AE814: llvm::cl::Option::addArgument() (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+     n1: 24588 0x5924409: _GLOBAL__sub_I_ObjCARCOpts.cpp (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+      n1: 24588 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+       n1: 24588 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+        n1: 24588 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+         n1: 24588 0x3: ???
+          n1: 24588 0x1FFF0007A6: ???
+           n1: 24588 0x1FFF0007AC: ???
+            n1: 24588 0x1FFF0007B0: ???
+             n0: 24588 0x1FFF0007B3: ???
+     n0: 0 in 6 places, all below massif's threshold (1.00%)
+ n1: 5085 0x5A08879: llvm::WritableMemoryBuffer::getNewUninitMemBuffer(unsigned long, llvm::Twine const&) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+  n1: 5085 0x5A08ABE: getMemoryBufferForStream(int, llvm::Twine const&) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+   n1: 5085 0x5A09227: llvm::MemoryBuffer::getFileAsStream(llvm::Twine const&) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+    n1: 5085 0x5A715BE: computeHostNumPhysicalCores() (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+     n1: 5085 0x5A71ED4: llvm::sys::getHostNumPhysicalCores() (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+      n1: 5085 0x5A87548: llvm::heavyweight_hardware_concurrency() (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+       n1: 5085 0x592EFC1: _GLOBAL__sub_I_ThinLTOCodeGenerator.cpp (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+        n1: 5085 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+         n1: 5085 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+          n1: 5085 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+           n1: 5085 0x3: ???
+            n1: 5085 0x1FFF0007A6: ???
+             n1: 5085 0x1FFF0007AC: ???
+              n1: 5085 0x1FFF0007B0: ???
+               n0: 5085 0x1FFF0007B3: ???
+ n1: 4608 0x58F1C45: _GLOBAL__sub_I_MachineCopyPropagation.cpp (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+  n1: 4608 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+   n1: 4608 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+    n1: 4608 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+     n1: 4608 0x3: ???
+      n1: 4608 0x1FFF0007A6: ???
+       n1: 4608 0x1FFF0007AC: ???
+        n1: 4608 0x1FFF0007B0: ???
+         n0: 4608 0x1FFF0007B3: ???
+ n0: 3311 in 37 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=37
+#-----------
+time=29980274
+mem_heap_B=176223
+mem_heap_extra_B=14649
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=30026231
+mem_heap_B=173935
+mem_heap_extra_B=14641
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=30047173
+mem_heap_B=169103
+mem_heap_extra_B=14737
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=30071832
+mem_heap_B=171319
+mem_heap_extra_B=15201
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=30090721
+mem_heap_B=173892
+mem_heap_extra_B=15492
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=30121845
+mem_heap_B=176852
+mem_heap_extra_B=16148
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=30148220
+mem_heap_B=179321
+mem_heap_extra_B=16751
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=30171521
+mem_heap_B=181078
+mem_heap_extra_B=17170
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=30224279
+mem_heap_B=182160
+mem_heap_extra_B=17224
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=30244553
+mem_heap_B=187996
+mem_heap_extra_B=17740
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=30272714
+mem_heap_B=189788
+mem_heap_extra_B=17844
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=30285477
+mem_heap_B=190243
+mem_heap_extra_B=17997
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=30309080
+mem_heap_B=194791
+mem_heap_extra_B=18225
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=30317355
+mem_heap_B=197655
+mem_heap_extra_B=18385
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=30325450
+mem_heap_B=197715
+mem_heap_extra_B=18445
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=30333538
+mem_heap_B=197775
+mem_heap_extra_B=18505
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=30342545
+mem_heap_B=297035
+mem_heap_extra_B=18565
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=30354543
+mem_heap_B=297179
+mem_heap_extra_B=18581
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=30363549
+mem_heap_B=297739
+mem_heap_extra_B=18613
+mem_stacks_B=0
+heap_tree=detailed
+n8: 297739 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 98304 0x4A1635B: _buf_realloc (ios.c:206)
+  n1: 98304 0x4A1635B: _buf_init (ios.c:681)
+   n3: 98304 0x4A1635B: ios_fd (ios.c:1010)
+    n1: 32768 0x4A1663C: ios_init_stdstreams (ios.c:1026)
+     n1: 32768 0x4A1732A: libsupport_init (libsupportinit.c:21)
+      n0: 32768 0x10A2CD: main (repl.c:214)
+    n1: 32768 0x4A1666B: ios_init_stdstreams (ios.c:1029)
+     n1: 32768 0x4A1732A: libsupport_init (libsupportinit.c:21)
+      n0: 32768 0x10A2CD: main (repl.c:214)
+    n1: 32768 0x4A166A4: ios_init_stdstreams (ios.c:1033)
+     n1: 32768 0x4A1732A: libsupport_init (libsupportinit.c:21)
+      n0: 32768 0x10A2CD: main (repl.c:214)
+ n1: 72704 0x8A8545A: pool (eh_alloc.cc:123)
+  n1: 72704 0x8A8545A: __static_initialization_and_destruction_0 (eh_alloc.cc:262)
+   n1: 72704 0x8A8545A: _GLOBAL__sub_I_eh_alloc.cc (eh_alloc.cc:338)
+    n1: 72704 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+     n1: 72704 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+      n1: 72704 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+       n1: 72704 0x3: ???
+        n1: 72704 0x1FFF0007A6: ???
+         n1: 72704 0x1FFF0007AC: ???
+          n1: 72704 0x1FFF0007B0: ???
+           n0: 72704 0x1FFF0007B3: ???
+ n2: 39584 0x59AE0D3: std::pair<llvm::StringMapIterator<llvm::cl::Option*>, bool> llvm::StringMap<llvm::cl::Option*, llvm::MallocAllocator>::try_emplace<llvm::cl::Option*>(llvm::StringRef, llvm::cl::Option*&&) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+  n2: 39512 0x59AE4D1: (anonymous namespace)::CommandLineParser::addOption(llvm::cl::Option*, llvm::cl::SubCommand*) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+   n1: 39168 0x59AE814: llvm::cl::Option::addArgument() (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+    n0: 39168 in 986 places, all below massif's threshold (1.00%)
+   n0: 344 in 2 places, all below massif's threshold (1.00%)
+  n0: 72 in 1 place, below massif's threshold (1.00%)
+ n1: 35360 0x4EBF141: __new_exitfn (in /usr/lib/libc-2.32.so)
+  n2: 35360 0x4EBF1E5: __internal_atexit (in /usr/lib/libc-2.32.so)
+   n0: 26000 in 25 places, all below massif's threshold (1.00%)
+   n1: 9360 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+    n1: 9360 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+     n1: 9360 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+      n1: 9360 0x3: ???
+       n1: 9360 0x1FFF0007A6: ???
+        n1: 9360 0x1FFF0007AC: ???
+         n1: 9360 0x1FFF0007B0: ???
+          n0: 9360 0x1FFF0007B3: ???
+ n2: 25764 0x5A229A5: llvm::StringMapImpl::RehashTable(unsigned int) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+  n1: 24588 0x59AE130: std::pair<llvm::StringMapIterator<llvm::cl::Option*>, bool> llvm::StringMap<llvm::cl::Option*, llvm::MallocAllocator>::try_emplace<llvm::cl::Option*>(llvm::StringRef, llvm::cl::Option*&&) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+   n1: 24588 0x59AE4D1: (anonymous namespace)::CommandLineParser::addOption(llvm::cl::Option*, llvm::cl::SubCommand*) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+    n2: 24588 0x59AE814: llvm::cl::Option::addArgument() (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+     n1: 24588 0x5924409: _GLOBAL__sub_I_ObjCARCOpts.cpp (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+      n1: 24588 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+       n1: 24588 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+        n1: 24588 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+         n1: 24588 0x3: ???
+          n1: 24588 0x1FFF0007A6: ???
+           n1: 24588 0x1FFF0007AC: ???
+            n1: 24588 0x1FFF0007B0: ???
+             n0: 24588 0x1FFF0007B3: ???
+     n0: 0 in 6 places, all below massif's threshold (1.00%)
+  n0: 1176 in 2 places, all below massif's threshold (1.00%)
+ n0: 17687 in 74 places, all below massif's threshold (1.00%)
+ n1: 4608 0x58F1C45: _GLOBAL__sub_I_MachineCopyPropagation.cpp (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+  n1: 4608 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+   n1: 4608 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+    n1: 4608 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+     n1: 4608 0x3: ???
+      n1: 4608 0x1FFF0007A6: ???
+       n1: 4608 0x1FFF0007AC: ???
+        n1: 4608 0x1FFF0007B0: ???
+         n0: 4608 0x1FFF0007B3: ???
+ n1: 3728 0x4EB2DEE: _nl_intern_locale_data (in /usr/lib/libc-2.32.so)
+  n1: 3728 0x4EB3660: _nl_load_locale_from_archive (in /usr/lib/libc-2.32.so)
+   n1: 3728 0x4EB260D: _nl_find_locale (in /usr/lib/libc-2.32.so)
+    n1: 3728 0x4EB1FA7: setlocale (in /usr/lib/libc-2.32.so)
+     n1: 3728 0x4A17314: libsupport_init (libsupportinit.c:18)
+      n0: 3728 0x10A2CD: main (repl.c:214)
+#-----------
+snapshot=56
+#-----------
+time=30371667
+mem_heap_B=298371
+mem_heap_extra_B=18637
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=30432464
+mem_heap_B=298403
+mem_heap_extra_B=18645
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=30492849
+mem_heap_B=298587
+mem_heap_extra_B=18661
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=30507497
+mem_heap_B=298595
+mem_heap_extra_B=18677
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=30516353
+mem_heap_B=2056875
+mem_heap_extra_B=18741
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=30520570
+mem_heap_B=2061005
+mem_heap_extra_B=18771
+mem_stacks_B=0
+heap_tree=peak
+n9: 2061005 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1048576 0x4943280: multiq_init (partr.c:87)
+  n1: 1048576 0x4943280: jl_init_threadinginfra (partr.c:229)
+   n1: 1048576 0x491A6D4: _julia_init (init.c:709)
+    n0: 1048576 0x10A316: main (repl.c:221)
+ n1: 640008 0x494234A: malloc_s (dtypes.h:359)
+  n1: 640008 0x494234A: jl_init_threadtls (threading.c:283)
+   n1: 640008 0x494249B: jl_init_threading (threading.c:425)
+    n1: 640008 0x491A6D4: _julia_init (init.c:709)
+     n0: 640008 0x10A316: main (repl.c:221)
+ n1: 98304 0x4A1635B: _buf_realloc (ios.c:206)
+  n1: 98304 0x4A1635B: _buf_init (ios.c:681)
+   n3: 98304 0x4A1635B: ios_fd (ios.c:1010)
+    n1: 32768 0x4A1663C: ios_init_stdstreams (ios.c:1026)
+     n1: 32768 0x4A1732A: libsupport_init (libsupportinit.c:21)
+      n0: 32768 0x10A2CD: main (repl.c:214)
+    n1: 32768 0x4A1666B: ios_init_stdstreams (ios.c:1029)
+     n1: 32768 0x4A1732A: libsupport_init (libsupportinit.c:21)
+      n0: 32768 0x10A2CD: main (repl.c:214)
+    n1: 32768 0x4A166A4: ios_init_stdstreams (ios.c:1033)
+     n1: 32768 0x4A1732A: libsupport_init (libsupportinit.c:21)
+      n0: 32768 0x10A2CD: main (repl.c:214)
+ n1: 72704 0x8A8545A: pool (eh_alloc.cc:123)
+  n1: 72704 0x8A8545A: __static_initialization_and_destruction_0 (eh_alloc.cc:262)
+   n1: 72704 0x8A8545A: _GLOBAL__sub_I_eh_alloc.cc (eh_alloc.cc:338)
+    n1: 72704 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+     n1: 72704 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+      n1: 72704 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+       n1: 72704 0x3: ???
+        n1: 72704 0x1FFF0007A6: ???
+         n1: 72704 0x1FFF0007AC: ???
+          n1: 72704 0x1FFF0007B0: ???
+           n0: 72704 0x1FFF0007B3: ???
+ n1: 57344 0x494E60E: malloc_s (dtypes.h:359)
+  n1: 57344 0x494E60E: jl_init_thread_heap (gc.c:3187)
+   n1: 57344 0x4942386: jl_init_threadtls (threading.c:292)
+    n1: 57344 0x494249B: jl_init_threading (threading.c:425)
+     n1: 57344 0x491A6D4: _julia_init (init.c:709)
+      n0: 57344 0x10A316: main (repl.c:221)
+ n0: 43361 in 85 places, all below massif's threshold (1.00%)
+ n2: 39584 0x59AE0D3: std::pair<llvm::StringMapIterator<llvm::cl::Option*>, bool> llvm::StringMap<llvm::cl::Option*, llvm::MallocAllocator>::try_emplace<llvm::cl::Option*>(llvm::StringRef, llvm::cl::Option*&&) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+  n2: 39512 0x59AE4D1: (anonymous namespace)::CommandLineParser::addOption(llvm::cl::Option*, llvm::cl::SubCommand*) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+   n1: 39168 0x59AE814: llvm::cl::Option::addArgument() (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+    n0: 39168 in 986 places, all below massif's threshold (1.00%)
+   n0: 344 in 2 places, all below massif's threshold (1.00%)
+  n0: 72 in 1 place, below massif's threshold (1.00%)
+ n1: 35360 0x4EBF141: __new_exitfn (in /usr/lib/libc-2.32.so)
+  n1: 35360 0x4EBF1E5: __internal_atexit (in /usr/lib/libc-2.32.so)
+   n0: 35360 in 26 places, all below massif's threshold (1.00%)
+ n2: 25764 0x5A229A5: llvm::StringMapImpl::RehashTable(unsigned int) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+  n1: 24588 0x59AE130: std::pair<llvm::StringMapIterator<llvm::cl::Option*>, bool> llvm::StringMap<llvm::cl::Option*, llvm::MallocAllocator>::try_emplace<llvm::cl::Option*>(llvm::StringRef, llvm::cl::Option*&&) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+   n1: 24588 0x59AE4D1: (anonymous namespace)::CommandLineParser::addOption(llvm::cl::Option*, llvm::cl::SubCommand*) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+    n2: 24588 0x59AE814: llvm::cl::Option::addArgument() (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+     n1: 24588 0x5924409: _GLOBAL__sub_I_ObjCARCOpts.cpp (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+      n1: 24588 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+       n1: 24588 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+        n1: 24588 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+         n1: 24588 0x3: ???
+          n1: 24588 0x1FFF0007A6: ???
+           n1: 24588 0x1FFF0007AC: ???
+            n1: 24588 0x1FFF0007B0: ???
+             n0: 24588 0x1FFF0007B3: ???
+     n0: 0 in 6 places, all below massif's threshold (1.00%)
+  n0: 1176 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=62
+#-----------
+time=30597021
+mem_heap_B=2062512
+mem_heap_extra_B=18832
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=30695161
+mem_heap_B=2062872
+mem_heap_extra_B=18856
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=30703880
+mem_heap_B=2063140
+mem_heap_extra_B=18892
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=30711797
+mem_heap_B=2062480
+mem_heap_extra_B=18840
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=30757959
+mem_heap_B=2061763
+mem_heap_extra_B=18797
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=30769808
+mem_heap_B=2061227
+mem_heap_extra_B=18525
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=30780192
+mem_heap_B=2060145
+mem_heap_extra_B=18391
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=30816423
+mem_heap_B=2060089
+mem_heap_extra_B=18367
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=30830343
+mem_heap_B=2058266
+mem_heap_extra_B=18342
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=30881349
+mem_heap_B=2056290
+mem_heap_extra_B=18310
+mem_stacks_B=0
+heap_tree=detailed
+n9: 2056290 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1048576 0x4943280: multiq_init (partr.c:87)
+  n1: 1048576 0x4943280: jl_init_threadinginfra (partr.c:229)
+   n1: 1048576 0x491A6D4: _julia_init (init.c:709)
+    n0: 1048576 0x10A316: main (repl.c:221)
+ n1: 640008 0x494234A: malloc_s (dtypes.h:359)
+  n1: 640008 0x494234A: jl_init_threadtls (threading.c:283)
+   n1: 640008 0x494249B: jl_init_threading (threading.c:425)
+    n1: 640008 0x491A6D4: _julia_init (init.c:709)
+     n0: 640008 0x10A316: main (repl.c:221)
+ n1: 98304 0x4A1635B: _buf_realloc (ios.c:206)
+  n1: 98304 0x4A1635B: _buf_init (ios.c:681)
+   n3: 98304 0x4A1635B: ios_fd (ios.c:1010)
+    n1: 32768 0x4A1663C: ios_init_stdstreams (ios.c:1026)
+     n1: 32768 0x4A1732A: libsupport_init (libsupportinit.c:21)
+      n0: 32768 0x10A2CD: main (repl.c:214)
+    n1: 32768 0x4A1666B: ios_init_stdstreams (ios.c:1029)
+     n1: 32768 0x4A1732A: libsupport_init (libsupportinit.c:21)
+      n0: 32768 0x10A2CD: main (repl.c:214)
+    n1: 32768 0x4A166A4: ios_init_stdstreams (ios.c:1033)
+     n1: 32768 0x4A1732A: libsupport_init (libsupportinit.c:21)
+      n0: 32768 0x10A2CD: main (repl.c:214)
+ n1: 72704 0x8A8545A: pool (eh_alloc.cc:123)
+  n1: 72704 0x8A8545A: __static_initialization_and_destruction_0 (eh_alloc.cc:262)
+   n1: 72704 0x8A8545A: _GLOBAL__sub_I_eh_alloc.cc (eh_alloc.cc:338)
+    n1: 72704 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+     n1: 72704 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+      n1: 72704 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+       n1: 72704 0x3: ???
+        n1: 72704 0x1FFF0007A6: ???
+         n1: 72704 0x1FFF0007AC: ???
+          n1: 72704 0x1FFF0007B0: ???
+           n0: 72704 0x1FFF0007B3: ???
+ n1: 57344 0x494E60E: malloc_s (dtypes.h:359)
+  n1: 57344 0x494E60E: jl_init_thread_heap (gc.c:3187)
+   n1: 57344 0x4942386: jl_init_threadtls (threading.c:292)
+    n1: 57344 0x494249B: jl_init_threading (threading.c:425)
+     n1: 57344 0x491A6D4: _julia_init (init.c:709)
+      n0: 57344 0x10A316: main (repl.c:221)
+ n0: 39686 in 97 places, all below massif's threshold (1.00%)
+ n2: 39584 0x59AE0D3: std::pair<llvm::StringMapIterator<llvm::cl::Option*>, bool> llvm::StringMap<llvm::cl::Option*, llvm::MallocAllocator>::try_emplace<llvm::cl::Option*>(llvm::StringRef, llvm::cl::Option*&&) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+  n2: 39512 0x59AE4D1: (anonymous namespace)::CommandLineParser::addOption(llvm::cl::Option*, llvm::cl::SubCommand*) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+   n1: 39168 0x59AE814: llvm::cl::Option::addArgument() (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+    n0: 39168 in 986 places, all below massif's threshold (1.00%)
+   n0: 344 in 2 places, all below massif's threshold (1.00%)
+  n0: 72 in 1 place, below massif's threshold (1.00%)
+ n1: 34320 0x4EBF141: __new_exitfn (in /usr/lib/libc-2.32.so)
+  n1: 34320 0x4EBF1E5: __internal_atexit (in /usr/lib/libc-2.32.so)
+   n0: 34320 in 26 places, all below massif's threshold (1.00%)
+ n2: 25764 0x5A229A5: llvm::StringMapImpl::RehashTable(unsigned int) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+  n1: 24588 0x59AE130: std::pair<llvm::StringMapIterator<llvm::cl::Option*>, bool> llvm::StringMap<llvm::cl::Option*, llvm::MallocAllocator>::try_emplace<llvm::cl::Option*>(llvm::StringRef, llvm::cl::Option*&&) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+   n1: 24588 0x59AE4D1: (anonymous namespace)::CommandLineParser::addOption(llvm::cl::Option*, llvm::cl::SubCommand*) (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+    n2: 24588 0x59AE814: llvm::cl::Option::addArgument() (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+     n1: 24588 0x5924409: _GLOBAL__sub_I_ObjCARCOpts.cpp (in /home/m/julia/julia/usr/lib/libLLVM-9jl.so)
+      n1: 24588 0x40112DD: call_init.part.0 (in /usr/lib/ld-2.32.so)
+       n1: 24588 0x40113C7: _dl_init (in /usr/lib/ld-2.32.so)
+        n1: 24588 0x40020C9: ??? (in /usr/lib/ld-2.32.so)
+         n1: 24588 0x3: ???
+          n1: 24588 0x1FFF0007A6: ???
+           n1: 24588 0x1FFF0007AC: ???
+            n1: 24588 0x1FFF0007B0: ???
+             n0: 24588 0x1FFF0007B3: ???
+     n0: 0 in 6 places, all below massif's threshold (1.00%)
+  n0: 1176 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=72
+#-----------
+time=30889965
+mem_heap_B=2047970
+mem_heap_extra_B=18246
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=30898581
+mem_heap_B=2039650
+mem_heap_extra_B=18182
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=30907197
+mem_heap_B=2031330
+mem_heap_extra_B=18118
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=30915813
+mem_heap_B=2023010
+mem_heap_extra_B=18054
+mem_stacks_B=0
+heap_tree=empty

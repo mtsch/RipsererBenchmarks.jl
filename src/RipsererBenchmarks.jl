@@ -1,43 +1,19 @@
-"""
-Pull Ripser from github and build it.
-"""
-function get_ripser()
-    if isfile("ripser-mod2") && isfile("ripser-coef")
-        @info "ripser exists"
-    else
-        rm("ripser-mod2"; force=true)
-        rm("ripser-coef"; force=true)
-        rm("ripser", force=true, recursive=true)
+module RipsererBenchmarks
 
-        run(`git clone https://github.com/Ripser/ripser`)
-        cd("ripser")
-        run(`make all`)
-        mv("ripser", "../ripser-mod2")
-        mv("ripser-coeff", "../ripser-coef")
-        cd("..")
+using BenchmarkTools
+using CSV
+using Eirene
+using Ripserer
+using SparseArrays
 
-        rm("ripser", force=true, recursive=true)
-    end
-end
+export Benchmark, ripser_benchmark, ripserer_benchmark, eirene_benchmark,
+    nv, load_data, setup_all
 
-"""
-Pull Cubical Ripser from github and build it.
-"""
-function get_cubical_ripser()
-    if isfile("CR2") && isfile("CR3")
-        @info "cubical ripser exists"
-    else
-        for d in (2, 3)
-            rm("CR$d"; force=true)
-            rm("CubicalRipser_$(d)dim"; force=true, recursive=true)
+include("utils.jl")
+include("benchmarks.jl")
+include("ripserer.jl")
+include("ripser.jl")
+include("eirene.jl")
+include("benchmarksuites.jl")
 
-            run(`git clone https://github.com/CubicalRipser/CubicalRipser_$(d)dim`)
-            cd("CubicalRipser_$(d)dim")
-            run(`make`)
-            mv("CR$d", "../CR$d")
-            cd("..")
-
-            rm("CubicalRipser_$(d)dim"; force=true, recursive=true)
-        end
-    end
 end

@@ -5,4 +5,8 @@ version = "0.1.0"
 
 [deps]
 BenchmarkTools = "6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf"
+CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
+Eirene = "9c0f25c4-2ca1-5870-89f6-52640788da1d"
+ProgressMeter = "92933f4c-e287-5a05-a399-4b506db050ca"
+Ripserer = "aa79e827-bd0b-42a8-9f10-2b302677a641"
 SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"

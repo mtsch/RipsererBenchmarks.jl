@@ -1,8 +1,4 @@
 # Utility file I/O functions. Not fit for general purpose use.
-using CSV
-using Ripserer
-using SparseArrays
-
 function load_dipha(filename)
     open(filename, "r") do f
         magic = read(f, Int)
@@ -75,31 +71,17 @@ function load_sparse(filename)
     sparse([I; J], [J; I], [V; V])
 end
 
-"""
-    run_ripserer(filename; kwargs...)
-
-Read file and run Ripserer.
-"""
-function run_ripserer(filename; sparse=false, threshold=nothing, kwargs...)
+function load_data(filename)
     ext = splitext(filename)[2]
-    if ext == ".dist"
-        data = load_dist(filename)
-        ftype = sparse ? SparseRips : Rips
-    elseif ext == ".pts"
-        data = load_points(filename)
-        ftype = sparse ? SparseRips : Rips
-    elseif ext == ".dipha"
-        data = load_dipha(filename)
-        ftype = Cubical
+    if ext == ".pts"
+        return load_points(filename)
+    elseif ext == ".dist"
+        return load_dist(filename)
     elseif ext == ".spdist"
-        data = load_sparse(filename)
-        ftype = SparseRips
+        return load_sparse(filename)
+    elseif ext == ".dipha"
+        return load_dipha(filename)
     else
-        error("invalid extension `$ext`")
-    end
-    if !isnothing(threshold)
-        return ripserer(ftype(data, threshold=threshold); kwargs...)
-    else
-        return ripserer(ftype(data); kwargs...)
+        error("unsupported filetype \"$(ext)\"")
     end
 end

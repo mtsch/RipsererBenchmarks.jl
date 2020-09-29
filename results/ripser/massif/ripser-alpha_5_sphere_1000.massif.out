@@ -1,0 +1,531 @@
+desc: --massif-out-file=/home/m/homology/RipsererBenchmarks/src/../results/massif/ripser-alpha_5_sphere_1000.massif.out
+cmd: /home/m/homology/RipsererBenchmarks/src/../exes/ripser-mod2 --dim 5 --format sparse /home/m/homology/RipsererBenchmarks/src/../datasets/alpha_5_sphere_1000.spdist
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=1392479097
+mem_heap_B=71536116
+mem_heap_extra_B=3845300
+mem_stacks_B=0
+heap_tree=detailed
+n5: 71536116 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 50331648 0x1116AC: void std::vector<std::pair<float, long>, std::allocator<std::pair<float, long> > >::_M_realloc_insert<std::pair<float, long> >(__gnu_cxx::__normal_iterator<std::pair<float, long>*, std::vector<std::pair<float, long>, std::allocator<std::pair<float, long> > > >, std::pair<float, long>&&) (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n1: 25165824 0x1180C7: ripser<sparse_distance_matrix>::compute_barcodes() (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+   n0: 25165824 0x10BAEE: main (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n1: 25165824 0x1182E2: ripser<sparse_distance_matrix>::compute_barcodes() (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+   n0: 25165824 0x10BAEE: main (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 15251712 0x1142D5: ripser<sparse_distance_matrix>::compute_pairs(std::vector<std::pair<float, long>, std::allocator<std::pair<float, long> > > const&, hash_map<long, unsigned long, ripser<sparse_distance_matrix>::entry_hash, ripser<sparse_distance_matrix>::equal_index>&, long) (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n1: 15251712 0x117C8C: ripser<sparse_distance_matrix>::compute_barcodes() (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+   n0: 15251712 0x10BAEE: main (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+ n1: 3847048 0x111DFF: std::_Hashtable<long, std::pair<long const, unsigned long>, std::allocator<std::pair<long const, unsigned long> >, std::__detail::_Select1st, ripser<sparse_distance_matrix>::equal_index, ripser<sparse_distance_matrix>::entry_hash, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_rehash(unsigned long, unsigned long const&) (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n1: 3847048 0x117C79: ripser<sparse_distance_matrix>::compute_barcodes() (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+   n0: 3847048 0x10BAEE: main (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+ n2: 1889792 0x11195C: void std::vector<std::pair<long, float>, std::allocator<std::pair<long, float> > >::_M_realloc_insert<std::pair<long, float> >(__gnu_cxx::__normal_iterator<std::pair<long, float>*, std::vector<std::pair<long, float>, std::allocator<std::pair<long, float> > > >, std::pair<long, float>&&) (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n1: 1381376 0x10FB76: read_sparse_distance_matrix(std::istream&) (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+   n0: 1381376 0x10B9EE: main (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n0: 508416 in 1 place, below massif's threshold (1.00%)
+ n0: 215916 in 23 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=2
+#-----------
+time=2236986966
+mem_heap_B=163810780
+mem_heap_extra_B=3841244
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=4031960439
+mem_heap_B=186674748
+mem_heap_extra_B=5368116
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=5482335637
+mem_heap_B=224368540
+mem_heap_extra_B=12694156
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=7403256923
+mem_heap_B=285824476
+mem_heap_extra_B=19804892
+mem_stacks_B=0
+heap_tree=detailed
+n4: 285824476 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 184549376 0x1116AC: void std::vector<std::pair<float, long>, std::allocator<std::pair<float, long> > >::_M_realloc_insert<std::pair<float, long> >(__gnu_cxx::__normal_iterator<std::pair<float, long>*, std::vector<std::pair<float, long>, std::allocator<std::pair<float, long> > > >, std::pair<float, long>&&) (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n1: 117440512 0x1180C7: ripser<sparse_distance_matrix>::compute_barcodes() (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+   n0: 117440512 0x10BAEE: main (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n1: 67108864 0x1182E2: ripser<sparse_distance_matrix>::compute_barcodes() (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+   n0: 67108864 0x10BAEE: main (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 79084160 0x1142D5: ripser<sparse_distance_matrix>::compute_pairs(std::vector<std::pair<float, long>, std::allocator<std::pair<float, long> > > const&, hash_map<long, unsigned long, ripser<sparse_distance_matrix>::entry_hash, ripser<sparse_distance_matrix>::equal_index>&, long) (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n1: 79084160 0x117C8C: ripser<sparse_distance_matrix>::compute_barcodes() (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+   n0: 79084160 0x10BAEE: main (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+ n1: 20085224 0x111DFF: std::_Hashtable<long, std::pair<long const, unsigned long>, std::allocator<std::pair<long const, unsigned long> >, std::__detail::_Select1st, ripser<sparse_distance_matrix>::equal_index, ripser<sparse_distance_matrix>::entry_hash, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_rehash(unsigned long, unsigned long const&) (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n1: 20085224 0x117C79: ripser<sparse_distance_matrix>::compute_barcodes() (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+   n0: 20085224 0x10BAEE: main (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+ n0: 2105716 in 24 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=6
+#-----------
+time=8839815805
+mem_heap_B=302601660
+mem_heap_extra_B=19800844
+mem_stacks_B=0
+heap_tree=detailed
+n4: 302601660 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 201326592 0x1116AC: void std::vector<std::pair<float, long>, std::allocator<std::pair<float, long> > >::_M_realloc_insert<std::pair<float, long> >(__gnu_cxx::__normal_iterator<std::pair<float, long>*, std::vector<std::pair<float, long>, std::allocator<std::pair<float, long> > > >, std::pair<float, long>&&) (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n1: 134217728 0x1180C7: ripser<sparse_distance_matrix>::compute_barcodes() (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+   n0: 134217728 0x10BAEE: main (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n1: 67108864 0x1182E2: ripser<sparse_distance_matrix>::compute_barcodes() (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+   n0: 67108864 0x10BAEE: main (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 79084160 0x1142D5: ripser<sparse_distance_matrix>::compute_pairs(std::vector<std::pair<float, long>, std::allocator<std::pair<float, long> > > const&, hash_map<long, unsigned long, ripser<sparse_distance_matrix>::entry_hash, ripser<sparse_distance_matrix>::equal_index>&, long) (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n1: 79084160 0x117C8C: ripser<sparse_distance_matrix>::compute_barcodes() (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+   n0: 79084160 0x10BAEE: main (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+ n1: 20085224 0x111DFF: std::_Hashtable<long, std::pair<long const, unsigned long>, std::allocator<std::pair<long const, unsigned long> >, std::__detail::_Select1st, ripser<sparse_distance_matrix>::equal_index, ripser<sparse_distance_matrix>::entry_hash, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_rehash(unsigned long, unsigned long const&) (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n1: 20085224 0x117C79: ripser<sparse_distance_matrix>::compute_barcodes() (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+   n0: 20085224 0x10BAEE: main (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+ n0: 2105684 in 24 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=7
+#-----------
+time=10805489014
+mem_heap_B=436819388
+mem_heap_extra_B=19800844
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=12870744546
+mem_heap_B=571037116
+mem_heap_extra_B=19800844
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=14753187352
+mem_heap_B=503928252
+mem_heap_extra_B=19796804
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=15973143938
+mem_heap_B=481650876
+mem_heap_extra_B=4168708
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=17345489809
+mem_heap_B=516136252
+mem_heap_extra_B=9578820
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=18412861064
+mem_heap_B=534460156
+mem_heap_extra_B=14028740
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=19937687199
+mem_heap_B=577352092
+mem_heap_extra_B=20557420
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=21157541247
+mem_heap_B=598562780
+mem_heap_extra_B=25860092
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=22392940799
+mem_heap_B=620845948
+mem_heap_extra_B=31430884
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=23875421362
+mem_heap_B=682069596
+mem_heap_extra_B=38086044
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=24976362101
+mem_heap_B=702236156
+mem_heap_extra_B=43127684
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=26260772590
+mem_heap_B=726314236
+mem_heap_extra_B=49147204
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=28074152762
+mem_heap_B=697260732
+mem_heap_extra_B=54991020
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=29309553862
+mem_heap_B=714037948
+mem_heap_extra_B=54991020
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=31280734581
+mem_heap_B=747592380
+mem_heap_extra_B=54991020
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=33030254886
+mem_heap_B=814701244
+mem_heap_extra_B=54991020
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=34677449826
+mem_heap_B=814701244
+mem_heap_extra_B=54991020
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=36749410847
+mem_heap_B=948918972
+mem_heap_extra_B=54991020
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=38067166436
+mem_heap_B=948918972
+mem_heap_extra_B=54991020
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=39055483772
+mem_heap_B=948918972
+mem_heap_extra_B=54991020
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=40373239712
+mem_heap_B=948918972
+mem_heap_extra_B=54991020
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=41691004637
+mem_heap_B=948918972
+mem_heap_extra_B=54991020
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=42876928909
+mem_heap_B=1083136700
+mem_heap_extra_B=54991020
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=44194685586
+mem_heap_B=1083136700
+mem_heap_extra_B=54991020
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=45841883702
+mem_heap_B=1083136700
+mem_heap_extra_B=54991020
+mem_stacks_B=0
+heap_tree=detailed
+n4: 1083136700 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 805306368 0x1116AC: void std::vector<std::pair<float, long>, std::allocator<std::pair<float, long> > >::_M_realloc_insert<std::pair<float, long> >(__gnu_cxx::__normal_iterator<std::pair<float, long>*, std::vector<std::pair<float, long>, std::allocator<std::pair<float, long> > > >, std::pair<float, long>&&) (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n1: 536870912 0x1180C7: ripser<sparse_distance_matrix>::compute_barcodes() (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+   n0: 536870912 0x10BAEE: main (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n1: 268435456 0x1182E2: ripser<sparse_distance_matrix>::compute_barcodes() (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+   n0: 268435456 0x10BAEE: main (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 219847552 0x1142D5: ripser<sparse_distance_matrix>::compute_pairs(std::vector<std::pair<float, long>, std::allocator<std::pair<float, long> > > const&, hash_map<long, unsigned long, ripser<sparse_distance_matrix>::entry_hash, ripser<sparse_distance_matrix>::equal_index>&, long) (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n1: 219847552 0x117C8C: ripser<sparse_distance_matrix>::compute_barcodes() (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+   n0: 219847552 0x10BAEE: main (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+ n1: 55877032 0x111DFF: std::_Hashtable<long, std::pair<long const, unsigned long>, std::allocator<std::pair<long const, unsigned long> >, std::__detail::_Select1st, ripser<sparse_distance_matrix>::equal_index, ripser<sparse_distance_matrix>::entry_hash, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_rehash(unsigned long, unsigned long const&) (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n1: 55877032 0x117C79: ripser<sparse_distance_matrix>::compute_barcodes() (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+   n0: 55877032 0x10BAEE: main (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+ n0: 2105748 in 24 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=32
+#-----------
+time=47001959392
+mem_heap_B=1620007652
+mem_heap_extra_B=54995076
+mem_stacks_B=0
+heap_tree=peak
+n4: 1620007652 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 1342177280 0x1116AC: void std::vector<std::pair<float, long>, std::allocator<std::pair<float, long> > >::_M_realloc_insert<std::pair<float, long> >(__gnu_cxx::__normal_iterator<std::pair<float, long>*, std::vector<std::pair<float, long>, std::allocator<std::pair<float, long> > > >, std::pair<float, long>&&) (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n1: 1073741824 0x1180C7: ripser<sparse_distance_matrix>::compute_barcodes() (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+   n0: 1073741824 0x10BAEE: main (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n1: 268435456 0x1182E2: ripser<sparse_distance_matrix>::compute_barcodes() (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+   n0: 268435456 0x10BAEE: main (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 219847552 0x1142D5: ripser<sparse_distance_matrix>::compute_pairs(std::vector<std::pair<float, long>, std::allocator<std::pair<float, long> > > const&, hash_map<long, unsigned long, ripser<sparse_distance_matrix>::entry_hash, ripser<sparse_distance_matrix>::equal_index>&, long) (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n1: 219847552 0x117C8C: ripser<sparse_distance_matrix>::compute_barcodes() (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+   n0: 219847552 0x10BAEE: main (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+ n1: 55877032 0x111DFF: std::_Hashtable<long, std::pair<long const, unsigned long>, std::allocator<std::pair<long const, unsigned long> >, std::__detail::_Select1st, ripser<sparse_distance_matrix>::equal_index, ripser<sparse_distance_matrix>::entry_hash, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_rehash(unsigned long, unsigned long const&) (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n1: 55877032 0x117C79: ripser<sparse_distance_matrix>::compute_barcodes() (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+   n0: 55877032 0x10BAEE: main (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+ n0: 2105788 in 24 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=33
+#-----------
+time=48649150644
+mem_heap_B=1351572156
+mem_heap_extra_B=54991020
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=52014797184
+mem_heap_B=1083136700
+mem_heap_extra_B=54986980
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=53497271538
+mem_heap_B=924208156
+mem_heap_extra_B=3880532
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=55473893632
+mem_heap_B=965637596
+mem_heap_extra_B=11026660
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=56956369533
+mem_heap_B=987491196
+mem_heap_extra_B=16489940
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=58438836198
+mem_heap_B=1026852348
+mem_heap_extra_B=22005020
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=59921306712
+mem_heap_B=1049374876
+mem_heap_extra_B=27635476
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=60909618645
+mem_heap_B=1064968604
+mem_heap_extra_B=31534084
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=62392084927
+mem_heap_B=1121336764
+mem_heap_extra_B=37237516
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=64368706543
+mem_heap_B=1153792028
+mem_heap_extra_B=45089204
+mem_stacks_B=0
+heap_tree=detailed
+n5: 1153792028 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 805306368 0x1116AC: void std::vector<std::pair<float, long>, std::allocator<std::pair<float, long> > >::_M_realloc_insert<std::pair<float, long> >(__gnu_cxx::__normal_iterator<std::pair<float, long>*, std::vector<std::pair<float, long>, std::allocator<std::pair<float, long> > > >, std::pair<float, long>&&) (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n1: 536870912 0x1180C7: ripser<sparse_distance_matrix>::compute_barcodes() (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+   n0: 536870912 0x10BAEE: main (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n1: 268435456 0x1182E2: ripser<sparse_distance_matrix>::compute_barcodes() (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+   n0: 268435456 0x10BAEE: main (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 180232384 0x1142D5: ripser<sparse_distance_matrix>::compute_pairs(std::vector<std::pair<float, long>, std::allocator<std::pair<float, long> > > const&, hash_map<long, unsigned long, ripser<sparse_distance_matrix>::entry_hash, ripser<sparse_distance_matrix>::equal_index>&, long) (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n1: 180232384 0x117C8C: ripser<sparse_distance_matrix>::compute_barcodes() (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+   n0: 180232384 0x10BAEE: main (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+ n1: 96941512 0x111DFF: std::_Hashtable<long, std::pair<long const, unsigned long>, std::allocator<std::pair<long const, unsigned long> >, std::__detail::_Select1st, ripser<sparse_distance_matrix>::equal_index, ripser<sparse_distance_matrix>::entry_hash, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_rehash(unsigned long, unsigned long const&) (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n1: 96941512 0x117C79: ripser<sparse_distance_matrix>::compute_barcodes() (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+   n0: 96941512 0x10BAEE: main (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+ n1: 67108864 0x112557: void std::vector<unsigned long, std::allocator<unsigned long> >::_M_realloc_insert<unsigned long>(__gnu_cxx::__normal_iterator<unsigned long*, std::vector<unsigned long, std::allocator<unsigned long> > >, unsigned long&&) (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n1: 67108864 0x114503: ripser<sparse_distance_matrix>::compute_pairs(std::vector<std::pair<float, long>, std::allocator<std::pair<float, long> > > const&, hash_map<long, unsigned long, ripser<sparse_distance_matrix>::entry_hash, ripser<sparse_distance_matrix>::equal_index>&, long) (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+   n1: 67108864 0x117C8C: ripser<sparse_distance_matrix>::compute_barcodes() (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+    n0: 67108864 0x10BAEE: main (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+ n0: 4202900 in 23 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=43
+#-----------
+time=66345330903
+mem_heap_B=1186008412
+mem_heap_extra_B=53143300
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=67827799836
+mem_heap_B=1210192764
+mem_heap_extra_B=59189388
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=69310265519
+mem_heap_B=1234015788
+mem_heap_extra_B=65145172
+mem_stacks_B=0
+heap_tree=detailed
+n5: 1234015788 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 805306368 0x1116AC: void std::vector<std::pair<float, long>, std::allocator<std::pair<float, long> > >::_M_realloc_insert<std::pair<float, long> >(__gnu_cxx::__normal_iterator<std::pair<float, long>*, std::vector<std::pair<float, long>, std::allocator<std::pair<float, long> > > >, std::pair<float, long>&&) (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n1: 536870912 0x1180C7: ripser<sparse_distance_matrix>::compute_barcodes() (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+   n0: 536870912 0x10BAEE: main (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n1: 268435456 0x1182E2: ripser<sparse_distance_matrix>::compute_barcodes() (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+   n0: 268435456 0x10BAEE: main (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 260456096 0x1142D5: ripser<sparse_distance_matrix>::compute_pairs(std::vector<std::pair<float, long>, std::allocator<std::pair<float, long> > > const&, hash_map<long, unsigned long, ripser<sparse_distance_matrix>::entry_hash, ripser<sparse_distance_matrix>::equal_index>&, long) (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n1: 260456096 0x117C8C: ripser<sparse_distance_matrix>::compute_barcodes() (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+   n0: 260456096 0x10BAEE: main (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+ n1: 96941512 0x111DFF: std::_Hashtable<long, std::pair<long const, unsigned long>, std::allocator<std::pair<long const, unsigned long> >, std::__detail::_Select1st, ripser<sparse_distance_matrix>::equal_index, ripser<sparse_distance_matrix>::entry_hash, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_rehash(unsigned long, unsigned long const&) (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n1: 96941512 0x117C79: ripser<sparse_distance_matrix>::compute_barcodes() (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+   n0: 96941512 0x10BAEE: main (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+ n1: 67108864 0x112557: void std::vector<unsigned long, std::allocator<unsigned long> >::_M_realloc_insert<unsigned long>(__gnu_cxx::__normal_iterator<unsigned long*, std::vector<unsigned long, std::allocator<unsigned long> > >, unsigned long&&) (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n1: 67108864 0x114503: ripser<sparse_distance_matrix>::compute_pairs(std::vector<std::pair<float, long>, std::allocator<std::pair<float, long> > > const&, hash_map<long, unsigned long, ripser<sparse_distance_matrix>::entry_hash, ripser<sparse_distance_matrix>::equal_index>&, long) (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+   n1: 67108864 0x117C8C: ripser<sparse_distance_matrix>::compute_barcodes() (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+    n0: 67108864 0x10BAEE: main (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+ n0: 4202948 in 23 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=46
+#-----------
+time=71286887964
+mem_heap_B=1333556828
+mem_heap_extra_B=73253220
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=72275200111
+mem_heap_B=1350173788
+mem_heap_extra_B=77407492
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=74251821853
+mem_heap_B=1383879996
+mem_heap_extra_B=85834044
+mem_stacks_B=0
+heap_tree=detailed
+n5: 1383879996 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 805306368 0x1116AC: void std::vector<std::pair<float, long>, std::allocator<std::pair<float, long> > >::_M_realloc_insert<std::pair<float, long> >(__gnu_cxx::__normal_iterator<std::pair<float, long>*, std::vector<std::pair<float, long>, std::allocator<std::pair<float, long> > > >, std::pair<float, long>&&) (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n1: 536870912 0x1180C7: ripser<sparse_distance_matrix>::compute_barcodes() (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+   n0: 536870912 0x10BAEE: main (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n1: 268435456 0x1182E2: ripser<sparse_distance_matrix>::compute_barcodes() (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+   n0: 268435456 0x10BAEE: main (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 343211488 0x1142D5: ripser<sparse_distance_matrix>::compute_pairs(std::vector<std::pair<float, long>, std::allocator<std::pair<float, long> > > const&, hash_map<long, unsigned long, ripser<sparse_distance_matrix>::entry_hash, ripser<sparse_distance_matrix>::equal_index>&, long) (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n1: 343211488 0x117C8C: ripser<sparse_distance_matrix>::compute_barcodes() (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+   n0: 343211488 0x10BAEE: main (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+ n1: 134217728 0x112557: void std::vector<unsigned long, std::allocator<unsigned long> >::_M_realloc_insert<unsigned long>(__gnu_cxx::__normal_iterator<unsigned long*, std::vector<unsigned long, std::allocator<unsigned long> > >, unsigned long&&) (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n1: 134217728 0x114503: ripser<sparse_distance_matrix>::compute_pairs(std::vector<std::pair<float, long>, std::allocator<std::pair<float, long> > > const&, hash_map<long, unsigned long, ripser<sparse_distance_matrix>::entry_hash, ripser<sparse_distance_matrix>::equal_index>&, long) (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+   n1: 134217728 0x117C8C: ripser<sparse_distance_matrix>::compute_barcodes() (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+    n0: 134217728 0x10BAEE: main (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+ n1: 96941512 0x111DFF: std::_Hashtable<long, std::pair<long const, unsigned long>, std::allocator<std::pair<long const, unsigned long> >, std::__detail::_Select1st, ripser<sparse_distance_matrix>::equal_index, ripser<sparse_distance_matrix>::entry_hash, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_rehash(unsigned long, unsigned long const&) (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+  n1: 96941512 0x117C79: ripser<sparse_distance_matrix>::compute_barcodes() (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+   n0: 96941512 0x10BAEE: main (in /home/m/homology/RipsererBenchmarks/exes/ripser-mod2)
+ n0: 4202900 in 23 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=49
+#-----------
+time=75240134321
+mem_heap_B=1399946844
+mem_heap_extra_B=89850756
+mem_stacks_B=0
+heap_tree=empty
