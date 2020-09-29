@@ -27,9 +27,9 @@ very interested in seeing results on larger datasets performed on a more powerfu
 
 ## Acknowledgments
 
-* Datasets `celegans`, `hiv`, `dragon1000`, `dragon2000`, `random16`, `fract-r`, `kelin400`,
-  and `klein900` were taken from [the PH-roadmap
-  repository](https://github.com/n-otter/PH-roadmap). Also, see the reference below.
+* Datasets `celegans`, `hiv`, `dragon1000`, `dragon2000`, `random16`, and `fract-r` were
+  taken from [the PH-roadmap repository](https://github.com/n-otter/PH-roadmap). Also, see
+  the reference below.
 
 * Datasets `sphere_3_192`, `o3_1024`, and `o3_4096` were taken from
   [the Ripser repository](https://github.com/Ripser/ripser).
