@@ -25,6 +25,29 @@ The code is sparsely documented. If you are interested in running the benchmarks
 feel free to open an issue, or [contact me](mailto:matijacufar@gmail.com). I would be
 very interested in seeing results on larger datasets performed on a more powerful computer.
 
+## New data sets
+
+The following datasets can't be found in any of the references.
+
+* `alpha_3_sphere_3000.spdist`: the Delaunay triangulation of 3000 points sampled from a 3
+  sphere with a little bit of noise.
+
+* `alpha_4_sphere_2000.spdist`: the Delaunay triangulation of 2000 points sampled from a 4
+  sphere with a little bit of noise.
+
+* `alpha_5_sphere_1000.spdist`: the Delaunay triangulation of 1000 points sampled from a 5
+  sphere with a little bit of noise.
+
+* `alpha_dragon2000.alpha`: exactly the same as `dragon2000`.
+
+* `alpha_dragon_2000.spdist`: the Delaunay triangulation of 3000 points sampled from a 3
+  sphere with some noise.
+
+* `alpha_torus_10_000.spdist`: the Delaunay triangulation of 10,000 points sampled from a
+  torus.
+
+* `gcycle.dist`: geodesic distances on a cycle graph with 100 vertices.
+
 ## Acknowledgments
 
 * Datasets `celegans`, `hiv`, `dragon1000`, `dragon2000`, `random16`, and `fract-r` were
