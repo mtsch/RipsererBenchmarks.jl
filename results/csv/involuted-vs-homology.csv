@@ -1,0 +1,4 @@
+name,size,dim,threshold,complex,target,baseline,ratio
+bonsai128,2097152,2,,Cubical,39.772 s,219.875 s,0.181
+alpha_dragon2000,2000,2,,Alpha,387.65 ms,462.893 ms,0.837
+lena2048,4194304,1,,Cubical,12.965 s,11.772 s,1.101

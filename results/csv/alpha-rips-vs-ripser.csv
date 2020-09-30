@@ -1,0 +1,6 @@
+name,size,dim,threshold,target,baseline,ratio
+alpha_3_sphere_3000,3000,3,,636.909 ms,789.505 ms,0.807
+alpha_torus_10_000,10000,2,,872.977 ms,1.179 s,0.741
+alpha_5_sphere_1000,1000,5,,49.431 s,46.707 s,1.058
+alpha_dragon_2000,2000,2,,56.589 ms,76.045 ms,0.744
+alpha_4_sphere_2000,2000,4,,5.844 s,6.203 s,0.942
