@@ -2,6 +2,7 @@ module RipsererBenchmarks
 
 using BenchmarkTools
 using CSV
+using DataFrames
 using Eirene
 using Logging
 using ProgressMeter
@@ -10,7 +11,7 @@ using SparseArrays
 using TerminalLoggers
 
 export Benchmark, ripser_benchmark, ripserer_benchmark, eirene_benchmark,
-    nv, load_data, setup_all, grind_ripser, grind_ripserer, run_and_save, save_latex
+    nv, load_data, setup_all, grind_ripser, grind_ripserer, run_and_save, save_csv
 
 include("utils.jl")
 include("benchmarks.jl")

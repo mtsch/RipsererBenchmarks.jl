@@ -29,8 +29,8 @@ end
 
 Ripserer.nv(b::Benchmark) = Ripserer.nv(b.complex(b.data))
 get_meta(arg) = function(b)
-    return if arg == :threshold
-        b.threshold
+    return string(if arg == :threshold
+        !isnothing(b.threshold) ? b.threshold : ""
     elseif arg == :size
         Ripserer.nv(b)
     elseif arg == :complex
@@ -41,5 +41,5 @@ get_meta(arg) = function(b)
         b.extra_kwargs[arg]
     else
         ""
-    end
+    end)
 end

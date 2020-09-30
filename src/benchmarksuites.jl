@@ -28,6 +28,7 @@ eirene_benchmarks = [
     Benchmark("celegans.dist"; dim_max=2),
     Benchmark("dragon1000.dist"; dim_max=1),
     Benchmark("hiv.dist"; dim_max=1),
+    Benchmark("o3_1024.pts"; dim_max=3, threshold=1.8, extra=(;sparse=true)),
 ]
 
 involuted_benchmarks = [
