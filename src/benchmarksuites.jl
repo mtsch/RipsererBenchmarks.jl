@@ -38,6 +38,11 @@ involuted_benchmarks = [
     Benchmark("lena2048.dipha"; dim_max=1),
     Benchmark("bonsai128.dipha"; dim_max=2),
     Benchmark("alpha_dragon2000.alpha"; dim_max=2),
+    Benchmark("o3_1024.pts"; dim_max=3, threshold=1.8, extra=(;sparse=true)),
+    Benchmark("o3_4096.pts"; dim_max=3, threshold=1.4, extra=(;sparse=true)),
+]
+new_inv = [
+    Benchmark("o3_1024.pts"; dim_max=3, threshold=1.8, extra=(;sparse=true)),
 ]
 
 test_ripser = [

@@ -10,7 +10,7 @@ using SparseArrays
 using TerminalLoggers
 
 export Benchmark, ripser_benchmark, ripserer_benchmark, eirene_benchmark,
-    nv, load_data, setup_all, grind_ripser, grind_ripserer, run_and_save
+    nv, load_data, setup_all, grind_ripser, grind_ripserer, run_and_save, save_latex
 
 include("utils.jl")
 include("benchmarks.jl")
@@ -19,6 +19,7 @@ include("ripser.jl")
 include("eirene.jl")
 include("benchmarksuites.jl")
 include("valgrind.jl")
+include("report.jl")
 
 function run_and_save(selected=nothing)
     get_ripsers()
