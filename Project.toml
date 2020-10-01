@@ -16,6 +16,7 @@ TerminalLoggers = "5d786b92-1e48-4d6f-9151-6b4477ca9bed"
 
 [compat]
 BenchmarkTools = "0.5"
+CSV = "0.7"
 DataFrames = "0.21"
 ProgressMeter = "1.4"
 Ripserer = "0.15"
