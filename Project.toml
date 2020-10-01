@@ -13,3 +13,6 @@ ProgressMeter = "92933f4c-e287-5a05-a399-4b506db050ca"
 Ripserer = "aa79e827-bd0b-42a8-9f10-2b302677a641"
 SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
 TerminalLoggers = "5d786b92-1e48-4d6f-9151-6b4477ca9bed"
+
+[compat]
+ProgressMeter = "1.4"
