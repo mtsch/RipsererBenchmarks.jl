@@ -15,4 +15,8 @@ SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
 TerminalLoggers = "5d786b92-1e48-4d6f-9151-6b4477ca9bed"
 
 [compat]
+BenchmarkTools = "0.5"
+DataFrames = "0.21"
+ProgressMeter = "1.4"
 Ripserer = "0.15"
+TerminalLoggers = "0.1"
