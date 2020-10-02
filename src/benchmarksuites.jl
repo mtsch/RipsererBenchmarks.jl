@@ -29,6 +29,7 @@ eirene_benchmarks = [
     Benchmark("dragon1000.dist"; dim_max=1),
     Benchmark("hiv.dist"; dim_max=1),
     Benchmark("o3_1024.pts"; dim_max=3, threshold=1.8, extra=(;sparse=true)),
+    Benchmark("random16.dist"; dim_max=7),
 ]
 
 involuted_benchmarks = [
@@ -41,9 +42,6 @@ involuted_benchmarks = [
     Benchmark("alpha_dragon2000.alpha"; dim_max=2),
     Benchmark("o3_1024.pts"; dim_max=3, threshold=1.8, extra=(;sparse=true)),
     Benchmark("o3_4096.pts"; dim_max=3, threshold=1.4, extra=(;sparse=true)),
-]
-new_inv = [
-    Benchmark("o3_1024.pts"; dim_max=3, threshold=1.8, extra=(;sparse=true)),
 ]
 
 test_ripser = [
