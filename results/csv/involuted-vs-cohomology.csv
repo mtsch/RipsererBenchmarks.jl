@@ -1,10 +1,10 @@
 name,size,dim,threshold,complex,target,baseline,ratio
-bonsai128,2097152,2,,Cubical,31.259 s,39.772 s,0.786
-lena2048,4194304,1,,Cubical,6.863 s,12.965 s,0.529
-gcycle,100,3,,Rips,5.553 s,6.497 s,0.855
-hiv,1088,1,,Rips,1.681 s,1.81 s,0.929
-dragon1000,1000,1,,Rips,532.279 ms,568.217 ms,0.937
-celegans,297,2,,Rips,3.644 s,4.438 s,0.821
-o3_4096,4096,3,1.4,Rips,75.663 s,108.067 s,0.7
-alpha_dragon2000,2000,2,,Alpha,362.102 ms,387.65 ms,0.934
-o3_1024,1024,3,1.8,Rips,3.069 s,4.58 s,0.67
+bonsai128,2097152,2,,Cubical,39.772 s,31.259 s,1.272
+lena2048,4194304,1,,Cubical,12.965 s,6.863 s,1.889
+gcycle,100,3,,Rips,6.497 s,5.553 s,1.17
+hiv,1088,1,,Rips,1.81 s,1.681 s,1.077
+dragon1000,1000,1,,Rips,568.217 ms,532.279 ms,1.068
+celegans,297,2,,Rips,4.438 s,3.644 s,1.218
+o3_4096,4096,3,1.4,Rips,108.067 s,75.663 s,1.428
+alpha_dragon2000,2000,2,,Alpha,387.65 ms,362.102 ms,1.071
+o3_1024,1024,3,1.8,Rips,4.58 s,3.069 s,1.492

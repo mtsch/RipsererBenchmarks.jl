@@ -51,8 +51,8 @@ function save_csv()
     CSV.write(
         res("involuted-vs-cohomology.csv"),
         _frame(
-            baseline=result["involuted"]["involuted"],
-            target=result["involuted"]["cohomology"],
+            baseline=result["involuted"]["cohomology"],
+            target=result["involuted"]["involuted"],
             benchmarks=involuted_benchmarks,
             extra_meta=(
                 "size" => :size,
